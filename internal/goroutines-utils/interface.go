@@ -1,5 +1,7 @@
 package goroutines_utils
 
 type Runnable interface {
-	Run() error
+	Run()
+	GetID() string
+	acknowledge() bool
 }
